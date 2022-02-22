@@ -1,0 +1,13 @@
+.glass-panel {
+  margin: 1.5rem auto 1rem auto;
+  width: max(80vw, 300px);
+  background-color: var(--glass);
+  box-shadow: 1px 2px 5px var(--glass);
+  border-radius: 1rem;
+  padding: 0.75rem;
+}
+@media (hover: none) {
+  .glass-panel {
+    width: 94vw;
+  }
+}

@@ -1,0 +1,1 @@
+export default 'https://6dkols4z89.execute-api.us-east-1.amazonaws.com/Prod';

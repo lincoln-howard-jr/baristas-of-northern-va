@@ -1,0 +1,11 @@
+.create-invite-container header {
+  text-align: center;
+}
+.create-invite-container h1 {
+  margin: 0.5rem 0 1.5rem 0;
+  text-decoration: underline;
+}
+.create-invite-container .controls {
+  padding: 1rem;
+  text-align: center;
+}

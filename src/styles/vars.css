@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  --dark-brown: hsla(3, 30%, 10%, 1);
+  --brown: hsla(3, 30%, 40%, 1);
+  --light-brown: hsla(3, 30%, 80%, 1);
+  --light-brown-translucent: hsla(3, 30%, 80%, 0.3);
+  --glass: hsla(0, 0%, 100%, 0.9);
+  --glass-dark: hsla(0, 0%, 50%, 0.7);
+  --glass-light: hsla(0, 0%, 100%, 0.6);
+  --clr-error: hsla(0, 70%, 70%, 1);
+  --clr-warning: hsla(45, 70%, 70%, 1);
+  --clr-info: hsl(90, 50%, 80%, 1);
+  --white: hsla(0, 100%, 100%, 1);
+  --black: hsla(0, 100%, 0%, 1);
+  --gray: hsla(0, 10%, 50%, 0.8);
+  /* text */
+  --font-family: 'Raleway', sans-serif;
+  --letter-spacing: 0.125rem;
+  /* z index */
+  --hide-z-index: -5;
+  --background-z-index: -1;
+  --nav-z-index: 5;
+  --freeze-z-index: 10;
+  /* sizes */
+  --profile-pic-size: 3rem;
+}

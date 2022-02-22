@@ -1,0 +1,32 @@
+@keyframes location-preview-slide-up {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+.locations-container .location {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  align-items: center;
+}
+.locations-container .location :first-child {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.locations-container .location:hover {
+  background-color: var(--light-brown-translucent);
+}
+.single-location-preview {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .single-location-preview {
+    display: block;
+    animation: location-preview-slide-up 0.2s;
+  }
+}

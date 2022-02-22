@@ -1,0 +1,15 @@
+.background-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  z-index: var(--background-z-index);
+}
+.background-container .background-image {
+  height: 100vmax;
+  width: 150vmax;
+  margin-top: calc((-100vmax + 100vh) / 2);
+  margin-left: calc((-150vmax + 100vw) / 2);
+}

@@ -10,8 +10,10 @@
     "@types/node": "^12.20.37",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "amazon-cognito-identity-js": "^5.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-qr-code": "^2.0.3",
     "react-scripts": "4.0.3",
     "typescript": "^4.5.3",
     "web-vitals": "^1.1.2"
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "aws s3 cp build s3://novabaristas.com --recursive && aws s3 cp build s3://www.novabaristas.com --recursive"
   },
   "eslintConfig": {
     "extends": [

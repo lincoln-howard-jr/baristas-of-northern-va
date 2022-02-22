@@ -1,0 +1,63 @@
+@keyframes swipe-suggestion-fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes swipe-suggestion-animation {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(20vmin);
+  }
+  90% {
+    transform: translateX(20vmin);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.swipe-suggestion-container {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--freeze-z-index);
+  background-color: var(--light-brown-translucent);
+}
+.swipe-suggestion-container div {
+  width: 50vmin;
+  height: 50vmin;
+  background-color: var(--dark-brown);
+  border-radius: 5vmin;
+}
+.swipe-suggestion-container img {
+  position: relative;
+  filter: invert(1);
+  left: 5vmin;
+  top: 10vmin;
+  width: 20vmin;
+  height: 20vmin;
+  animation: swipe-suggestion-animation 3s infinite;
+}
+.swipe-suggestion-container p {
+  color: white;
+  position: relative;
+  left: 5vmin;
+  top: 10vmin;
+  width: 40vmin;
+  text-align: center;
+}
+@media (hover: none) {
+  .swipe-suggestion-container.show {
+    display: grid;
+    animation: swipe-suggestion-fade-in 1s;
+  }
+}

@@ -1,0 +1,44 @@
+.forum-thread {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1.5rem 0.5rem;
+}
+.forum-thread header {
+  display: grid;
+  grid-template-columns: 1fr 3ch;
+  grid-template-rows: 2rem 1rem;
+  grid-template-areas: "member-name comment-count"
+                       "date-posted comment-count";
+}
+.forum-thread header h3 {
+  grid-area: member-name;
+  margin: 0;
+}
+.forum-thread header p {
+  grid-area: date-posted;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.forum-thread header h4 {
+  margin: 0;
+  grid-area: comment-count;
+}
+.forum-thread > p {
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.forum-thread div {
+  height: calc(100% - 2rem);
+  width: 0px;
+  border-right: 2px dashed var(--brown);
+}
+@media (hover: hover) {
+  .forum-thread.clickable {
+    cursor: pointer;
+  }
+  .forum-thread.clickable:hover {
+    background-color: var(--light-brown-translucent)
+  }
+}

@@ -1,0 +1,14 @@
+.freeze {
+  transition: 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--glass-light);
+  z-index: var(--hide-z-index);
+}
+.freeze.frozen {
+  z-index: var(--freeze-z-index);
+  background-color: var(--glass-dark);
+}
